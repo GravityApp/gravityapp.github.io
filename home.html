@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/home.css">
+    <script src="/home.js"></script>
+    <script src="https://kit.fontawesome.com/ce718fcba7.js" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+    <title>Home | Gravity Apps</title>
+</head>
+<header>
+  <ul id="main-nav">
+    <li><span><a href="home.html" class="links"><b>Home</b></a></span></li>
+    <li><a href="/about.html" class="links">About</a></li>
+    <li><a href="#" class="links">Neumorphism Library<b><span class="new">NEW</span></b></a></li>
+    <li><a href="/pricing.html" class="links">Pricing</a></li>
+  </ul>
+  <button class="ham-button">
+   <a onclick="myFunction()" class="nav-element"><span class="material-icons" style="color: black;">menu</span></a>
+</header>
+<body>
+    <!---->
+    <section class="intro-section">
+        <h1 class="dark-radial-h1">Apps redefined with Gravity Apps.</h1>
+        <br>
+        <p><span class="subtitle-white">Make a <b>Bold</b> statement.</span></p>
+    </section>
+    <!---->
+    <section class="promo-page">
+      <!---->
+      <div class="topsection">
+        <!---->
+      <div class="aboutpgbox">
+        <div>
+        <h2>Find out more about us.</h2>
+        <p>We may be new around here, but that doesn't mean less quality and professionalism. Learn more about us here.</p>
+      </div>
+        <span class="material-icons">keyboard_arrow_right</span>
+      </div>
+      <!---->
+      <div class="neupgbox">
+        <div>
+        <h2>Check out our Neumorphism Library<b><span class="new">NEW</span></b></h2>
+        <p>The simple yet efficient Neumorphism Library for free. Open sourced too. Just import the files with a few clicks. Free to use, forever. Check it out here.</p>
+      </div>
+      <span class="material-icons">keyboard_arrow_right</span>
+      </div>
+    </div>
+    <!---->
+      <div class="safeappbox">
+        <div>
+        <h2>The Safe App.</h2>
+        <p>The amazing app for protecting yourself from COVID-19.</p>
+      </div>
+        <span class="material-icons">keyboard_arrow_right</span>
+      </div>
+    </section>
+    <section class="eco-friendly">
+      <h3 style="font-size: 30px;">Sustainable Development<span class="material-icons eco-icon">eco</span></h3>
+      <p style="margin: 2px 15px;">We here at Gravity Apps are nature lovers and hope to preserve it whilst developing at higher rates. </p>
+    </section>
+    <section class="follow-us">
+      <h3>Make sure to follow us for instant updates.</h3>
+      <p>Join the revolution with us</p>
+      <div class="follow-icons">
+        
+        <a href="https://www.instagram.com/gravity.apps/"><i class="fab fa-instagram soc-icons" aria-hidden="true"></i></a>
+
+        <a href="https://twitter.com/gravity_apps"><i class="fab fa-twitter soc-icons" aria-hidden="true"></i></a>
+
+        <a href="https://fb.me/GravityAppsfb"><i class="fab fa-facebook soc-icons" aria-hidden="true"></i></a>
+
+        <a href="https://github.com/GravityApp"><i class="fab fa-github soc-icons" aria-hidden="true"></i></a>
+
+        <a href="t.me/gravityapps"><i class="fab fa-telegram soc-icons" aria-hidden="true"></i></a>
+      </div>
+    </section>
+    <!-- <section class="end">
+      <h1>Well, we have got nothing here.</h1>
+    </section> -->
+    <!---->
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDcqQZZi4FYbrXrQXhgTXukVrQfzwU5-3M",
+    authDomain: "gravity-apps-website.firebaseapp.com",
+    projectId: "gravity-apps-website",
+    storageBucket: "gravity-apps-website.appspot.com",
+    messagingSenderId: "836128354348",
+    appId: "1:836128354348:web:c658ed497424f8097b2189",
+    measurementId: "G-D8TGXT9V0J"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+</body>
+</html>
