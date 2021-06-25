@@ -1,0 +1,208 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  @media screen and (max-width: 600px) {
+   
+    body .card-section{
+      height: 150vh;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+      display: flex;  
+      width: 100%;
+    }
+   
+    .card{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-bottom: 5px;
+      width: 18rem;
+
+    }
+    .card :nth-child(1){
+      margin-bottom: 3px;
+    }
+    .card .btn{
+      font-size: 12px;
+    }
+
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+/**/
+@keyframes fade-in-bottom {
+  0% {opacity: 0; bottom: -50px;}
+  100% {opacity: 1; bottom: 0px;}
+}
+/**/
+
+.navbar{
+    position: fixed;
+    background-color: white;
+    color: black;
+}
+
+/*CSS Rules for the New tag starts*/
+.new{
+display: inline-block;
+position: relative;
+font-size: 8px;
+background-image: linear-gradient(#3498db, violet);
+padding: 1px 2px;
+border-radius: 2px;
+color: white;
+border-color: transparent;
+bottom: 12px;
+right: -2px;
+}
+/*New tag CSS Rules ends*/
+
+
+
+/*CSS Rules for scrollbar*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/*CSS Rules for scrollbar ends*/
+
+/*Media queries start*/
+
+
+/*Intro-section-CSS rules start*/
+.intro-section{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      background-image: url('/assets/gravity-apps-bg-1.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+     height: 100vh;
+}
+
+.subtitle-white{
+    color: white;
+    animation: fade-in-bottom 1s;
+}
+
+.dark-radial-h1{
+  background: radial-gradient(#eff1ff, #000 80%);
+  background-position: 50% 75%;
+  background-size: 100% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  animation: fade-in-bottom 1s;
+}  
+/*CSS rules ends*/
+
+
+
+/*Media queries start*/
+
+  /*Media queries ends*/
+  
+
+
+/*Promo page CSS rules starts*/
+  .card-section{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/assets/gravity-apps-bg-2.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    overflow: hidden;
+    padding: 3px;
+    display: flex;
+    flex-direction: column  ;
+  }
+
+
+/*CSS Rules ends*/
+
+/**/
+.eco-friendly{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-image: url('https://images.pexels.com/photos/1048033/pexels-photo-1048033.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-attachment: fixed;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  color: white;
+  padding: 5px;
+}
+
+.eco-icon{
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    padding: 1px 2px;
+    border-radius: 2px;
+    color: rgb(44, 204, 44);
+    bottom: 12px;
+    right: 5px;
+  }
+
+  .follow-us{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(39, 39, 39);
+    height: 50vh;
+    color: white;
+    padding: 5px;
+  }
+
+  .follow-icons{
+    margin: 20px;
+    transition: all .2s ease-in-out;
+  }
+
+  .follow-icons i{
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+  }
+
+  .follow-icons i:hover{
+    transform: scale(1.2);
+    color: white;
+  }
+
+ .follow-icons a{
+    text-decoration: none;
+    color: white;
+  }
