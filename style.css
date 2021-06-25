@@ -5,6 +5,34 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
   }
+  @media screen and (max-width: 600px) {
+   
+    body .card-section{
+      height: 150vh;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+      display: flex;  
+      width: 100%;
+    }
+   
+    .card{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-bottom: 5px;
+      width: 18rem;
+
+    }
+    .card :nth-child(1){
+      margin-bottom: 3px;
+    }
+    .card .btn{
+      font-size: 12px;
+    }
+
+}
 
 body{
     background-color: #f0f0f0;
@@ -17,35 +45,11 @@ body{
 }
 /**/
 
-/*Navigatiob Bar Not Responsive*/
-#main-nav{ 
-  display: flex;
-  list-style: none;
-  font-size: 15px;
-  position: fixed;
-  background-color: white;
-  width: 100vw;
-  z-index: 2;
-  list-style: none;
+.navbar{
+    position: fixed;
+    background-color: white;
+    color: black;
 }
-
-#main-nav li{
-  margin-right: 10px;
-  animation: fade-in-bottom 1s;
-  padding: 15px;
-}
-
-.links{
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase ;
-
-}
-.nav-element:hover,
-.nav-element:active {
-color: #3498db
-}
-/**/
 
 /*CSS Rules for the New tag starts*/
 .new{
@@ -63,44 +67,6 @@ right: -2px;
 /*New tag CSS Rules ends*/
 
 
-/*The CSS Rules for Ham Burger Menu Starts*/
-
-.ham-button{
-display: none;
-position: fixed;
-bottom: 90%;
-right: 10%;
-font-size: 18px;
-background-color: white;
-border: transparent;
-cursor: pointer;
-padding: 5px;
-border-radius: 99px;
-height: 70px;
-width: 70px;
-text-align: center;
-}
-
-
-/*Animations for Hamburger menu*/
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/*Animation CSS Rules*/
-
-/*CSS rules for Hamburger menu ends*/
 
 /*CSS Rules for scrollbar*/
 ::-webkit-scrollbar {
@@ -123,11 +89,6 @@ text-align: center;
 /*CSS Rules for scrollbar ends*/
 
 /*Media queries start*/
-@media screen and (max-width: 600px) {
-  #main-nav{flex-direction: column; position: unset; display: none;}
-  .ham-button{display: block;}
-}
-/*Media queries ends*/
 
 
 /*Intro-section-CSS rules start*/
@@ -136,12 +97,11 @@ text-align: center;
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      background-image: url('assets/home/bg.jpg');
+      background-image: url('/assets/gravity-apps-bg-1.jpeg');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
-      max-width: 100%;
-      height: 90vh;
+     height: 100vh;
 }
 
 .subtitle-white{
@@ -163,79 +123,29 @@ text-align: center;
 
 
 
+/*Media queries start*/
 
+  /*Media queries ends*/
+  
 
 
 /*Promo page CSS rules starts*/
-  .promo-page{
-    display: flex;
-    flex-direction: column;
+  .card-section{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-image: url('assets/home/bg2.jpg');
+    height: 100vh;
+    background-image: url('/assets/gravity-apps-bg-2.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
-    max-width: 100%;
-    height: 90vh;
-  }
-
-  .topsection{
+    overflow: hidden;
+    padding: 3px;
     display: flex;
-    flex-direction: row;
-    padding: 10%;
+    flex-direction: column  ;
   }
 
 
-
-  .aboutpgbox{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 5px;
-    padding: 8px;
-    margin-right: 3px;
-    animation: fade-in-bottom 1s;
-  }
-  .aboutpgbox:hover{
-    opacity: 90%;
-    transform: scale(1.02);
-  }
-
-  .neupgbox{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 3px;
-    padding: 8px;
-    margin-left: 5px;
-    animation: fade-in-bottom 1s;
-  }
-
-  .neupgbox:hover{
-    opacity: 90%;
-    transform: scale(1.02);
-  }
-
-  .safeappbox{
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 3px;
-    padding: 8px;
-    margin: 5px;
-    width: 78vw;
-    align-self: center;
-    animation: fade-in-bottom 1s;
-  }
-
-
-  .safeappbox:hover{
-    opacity: 90%;
-    transform: scale(1.02);
-  }
 /*CSS Rules ends*/
 
 /**/
@@ -244,11 +154,10 @@ text-align: center;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-image: url('assets/home/bg3.jpg');
+  background-image: url('https://images.pexels.com/photos/1048033/pexels-photo-1048033.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
   background-attachment: fixed;  
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
   height: 90vh;
   color: white;
   padding: 5px;
@@ -270,12 +179,8 @@ text-align: center;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    background-image: url('assets/home/bg4.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    max-width: 100%;
-    height: 30vh;
+    background-color: rgb(39, 39, 39);
+    height: 50vh;
     color: white;
     padding: 5px;
   }
@@ -285,17 +190,19 @@ text-align: center;
     transition: all .2s ease-in-out;
   }
 
-  .soc-icons{
+  .follow-icons i{
     font-size: 30px;
     padding: 5px;
     margin: 10px;
+    color: white;
   }
 
-  .soc-icons:hover{
+  .follow-icons i:hover{
     transform: scale(1.2);
+    color: white;
   }
 
-  a{
+ .follow-icons a{
     text-decoration: none;
-    color: inherit;
+    color: white;
   }

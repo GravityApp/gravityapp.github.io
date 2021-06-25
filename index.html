@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/style.css">
-    <script src="/home.js"></script>
-    <script src="https://kit.fontawesome.com/ce718fcba7.js" crossorigin="anonymous"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Home | Gravity Apps</title>
 </head>
 <header>
-  <ul id="main-nav">
-    <li><span><a href="home.html" class="links"><b>Home</b></a></span></li>
-    <li><a href="/about.html" class="links">About</a></li>
-    <li><a href="#" class="links">Neumorphism Library<b><span class="new">NEW</span></b></a></li>
-    <li><a href="/pricing.html" class="links">Pricing</a></li>
-  </ul>
-  <button class="ham-button">
-   <a onclick="myFunction()" class="nav-element"><span class="material-icons" style="color: black;">menu</span></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!--<a class="navbar-brand" href="#">Navbar</a>-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Under work</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 <body>
     <!---->
@@ -34,40 +42,52 @@
         <br>
         <p><span class="subtitle-white">Make a <b>Bold</b> statement.</span></p>
     </section>
+    
     <!---->
-    <section class="promo-page">
-      <!---->
-      <div class="topsection">
+    <section class="card-section">
+      <h3 style="color: white;">Site under construction.</h3>
+      <div class="row">
         <!---->
-      <div class="aboutpgbox">
-        <div>
-        <h2>Find out more about us.</h2>
-        <p>We may be new around here, but that doesn't mean less quality and professionalism. Learn more about us here.</p>
+        <div class="col-lg-4">
+      <div class="card" style="width: 18rem; text-align: left; margin-bottom: 10px;">
+          <div class="card-body">
+              <h5 class="card-title">Find out more about us.</h5>
+              <p class="card-text">We may be new around here, but that doesn't mean less quality and professionalism. Learn more about us here.</p>
+              <br>
+              <button class="btn btn-primary btn-dark" href="#" style="margin-top: 10px;">About us</button>
+          </div>
       </div>
-        <span class="material-icons">keyboard_arrow_right</span>
-      </div>
-      <!---->
-      <div class="neupgbox">
-        <div>
-        <h2>Check out our Neumorphism Library<b><span class="new">NEW</span></b></h2>
-        <p>The simple yet efficient Neumorphism Library for free. Open sourced too. Just import the files with a few clicks. Free to use, forever. Check it out here.</p>
-      </div>
-      <span class="material-icons">keyboard_arrow_right</span>
-      </div>
+        </div> 
+      <!--////////////////////////////////////////////////////-->
+      <div class="col-lg-4">
+      <div class="card" style="width: 18rem; text-align: left;">
+        <div class="card-body">
+            <h5 class="card-title">Check out our Neumorphism Library<b><span class="new">NEW</span></b></h5>
+            <p class="card-text">The simple yet efficient Neumorphism Library for free. Just import the files with a few clicks. Free to use, forever.</p>
+            <button class="btn btn-primary btn-dark" href="#">Visit now</button>
+        </div>
     </div>
+      </div>
+    
     <!---->
-      <div class="safeappbox">
-        <div>
-        <h2>The Safe App.</h2>
-        <p>The amazing app for protecting yourself from COVID-19.</p>
-      </div>
-        <span class="material-icons">keyboard_arrow_right</span>
-      </div>
+    <div class="col-lg-4">
+    <div class="card" style="width: 18rem; text-align: left;">
+        <div class="card-body">
+            <h5 class="card-title">The Safe App</h5>
+            <p class="card-text">The amazing app for protecting yourself from COVID-19. This is targetting to help people fight COVID-19. It's multiplaform and free to use.</p>
+            <button class="btn btn-primary btn-dark" href="#" style="margin-top: 5px;">Coming Soon</button>
+        </div>
+    </div>
+    </div>
+  </div>
     </section>
     <section class="eco-friendly">
       <h3 style="font-size: 30px;">Sustainable Development<span class="material-icons eco-icon">eco</span></h3>
       <p style="margin: 2px 15px;">We here at Gravity Apps are nature lovers and hope to preserve it whilst developing at higher rates. </p>
     </section>
+
+    <!--Footer-->
+    
     <section class="follow-us">
       <h3>Make sure to follow us for instant updates.</h3>
       <p>Join the revolution with us</p>
@@ -88,24 +108,14 @@
       <h1>Well, we have got nothing here.</h1>
     </section> -->
     <!---->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ce718fcba7.js" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
 
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyDcqQZZi4FYbrXrQXhgTXukVrQfzwU5-3M",
-    authDomain: "gravity-apps-website.firebaseapp.com",
-    projectId: "gravity-apps-website",
-    storageBucket: "gravity-apps-website.appspot.com",
-    messagingSenderId: "836128354348",
-    appId: "1:836128354348:web:c658ed497424f8097b2189",
-    measurementId: "G-D8TGXT9V0J"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
 
 </body>
 </html>
